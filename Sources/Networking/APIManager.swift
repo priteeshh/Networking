@@ -27,7 +27,7 @@ public final class APIManager: @unchecked Sendable {
         urlRequest.httpMethod = resource.method.rawValue
         urlRequest.httpBody = resource.body
         
-        resource.header.forEach { key, value in
+        resource.headers.forEach { key, value in
             urlRequest.setValue(value, forHTTPHeaderField: key)
         }
         

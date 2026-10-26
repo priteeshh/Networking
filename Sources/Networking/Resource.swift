@@ -8,7 +8,7 @@
 import Foundation
 
 public struct Resource<T: Decodable> {
-    public let url: URL
+    public let url: URL?
     public var method: HTTPMethod
     public var headers: [String: String]
     public var body: Data?
